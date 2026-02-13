@@ -10,13 +10,11 @@ extends Button
 
 
 func _on_Button_button_down():
-	$clique.play()
 	get_tree().change_scene("res://Main.tscn")
 	
 
 
 func _on_Button2_button_down():
-	$clique.play()
 	var children : Array = get_parent().get_children();
 	
 	for n in children.size():
@@ -29,7 +27,6 @@ func _on_Button2_button_down():
 
 
 func _on_Button3_button_down():
-	$clique.play()
 	get_tree().quit()
 
 

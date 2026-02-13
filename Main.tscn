@@ -191,6 +191,7 @@ wait_time = 0.05
 
 [node name="FadingTimer" type="Timer" parent="HUD"]
 wait_time = 0.01
+
 [connection signal="finished" from="Main/ost" to="Main" method="_on_ost_finished"]
 [connection signal="timeout" from="HUD/Timer" to="HUD" method="_on_Timer_timeout"]
 [connection signal="timeout" from="HUD/FadingTimer" to="HUD" method="_on_FadingTimer_timeout"]
